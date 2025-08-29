@@ -3,3 +3,69 @@
 .hind-madurai {
     font-family: "Hind Madurai", sans-serif;
 }
+/* Media Query for smaller devices */
+@media screen and (max-width: 576px) {
+    .nav {
+        margin: 0px 15px;
+    }
+    .icons {
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+        padding-left: 5px;
+    }
+    .icons-2 {
+        flex-direction: column;
+    }
+    .parent-card {
+        grid-template-columns: 1fr;
+        margin: 0px 20px;
+    }
+    .child-1 {
+        grid-template-columns: 1fr;
+        grid-column: span 1;
+    }
+    .child-2 {
+        grid-column: span 1;
+    }
+}
+/* Media Query for medium devices */
+@media screen and (min-width: 577px) and (max-width:768px) {
+    .icons{
+        flex-direction: column;
+    }
+    .icons-2 {
+        flex-direction: column;
+    }
+    .parent-card {
+        grid-template-columns: 1fr;
+        margin: 0px 20px;
+    }
+    .child-1 {
+        grid-template-columns: 1fr;
+        grid-column: span 1;
+    }
+    .child-2 {
+        grid-column: span 1;
+    }
+}
+/* Media Queries For Large Devices */
+@media screen and (min-width: 769px) and (max-width:992px){
+    .parent-card {
+        grid-template-columns: repeat(2,1fr);
+        margin: 0px 20px;
+    }
+    .child-1 {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+/* Media Queries For Larger Devices */
+@media screen and (min-width: 993px) and (max-width:1200px){
+    .parent-card {
+        grid-template-columns: repeat(2,1fr);
+        margin: 0px 20px;
+    }
+    .child-1 {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
